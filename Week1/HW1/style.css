@@ -1,0 +1,71 @@
+body{
+    background-color:azure;
+    font-family:'palatino';
+}
+
+/* NAV STYLES */
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto; 
+    width: 75%;
+    height:5%;
+    margin-top:none;
+    margin-left:12%;
+    background-color: beige;
+    position:sticky;
+    top:0;
+    flex-direction: column;
+    gap:10px;
+}
+.nav__list{
+    display:flex;
+    justify-content:space-evenly;
+    list-style: none;
+    margin: 1em 0;
+    font-size:1.5em;
+}
+
+/* CONTAINER STYLES */
+
+.container__section{
+    margin: auto; 
+    width: 75%;
+    height:50%;
+    margin-top:1%;
+    display:flex;
+}
+.container__three{
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.container__section__image{
+    margin-right:1%;
+}
+.container__section__text{
+    font-size:1.2em;
+    text-align: justify;
+    margin:0;
+    padding-top:2%;
+}
+
+/* LINK STYLES */
+
+a:link {
+    text-decoration: none;
+    color:blueviolet;
+  }
+a:hover {
+    font-weight: bold;
+  }
+
+/* FOOTER STYLES */
+
+.footer{
+    text-align:center;
+    margin: auto; 
+    margin-top:2%;
+    width: 75%;
+    background-color: beige;
+}
