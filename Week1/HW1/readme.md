@@ -58,15 +58,15 @@ I have self-evaluated my final product, the webpage by talking about some of the
       
 ##F. Takeaways from the process
   
-  a. I have learned how to make wireframes along with their importance in the process of web development.
-  b. I have used flexbox layout in CSS, which is a new learning for me.
-  c. I have started working with the inspect element option and developer tools more than before.
+  1. I have learned how to make wireframes along with their importance in the process of web development.
+  2. I have used flexbox layout in CSS, which is a new learning for me.
+  3. I have started working with the inspect element option and developer tools more than before.
   
 ##G. Credits
 
-  a. Professor Mathura Govindarajan 
-  b. Flexboxfroggy website
-  c. The read on 'the skeleton plane' from *the elements of user experience*
+  1. Professor Mathura Govindarajan 
+  2. Flexboxfroggy website
+  3. The read on 'the skeleton plane' from *the elements of user experience*
 
 
 ###H. Link of the final webpage : https://dt1930.github.io/connections_labs2022/Week1/HW1/index.html
