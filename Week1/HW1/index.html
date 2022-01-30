@@ -1,1 +1,73 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project FruitPluck</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="#container__one">About</a></li>
+                <li class="nav__list-item"><a href="#container__two">Development</a></li>
+                <li class="nav__list-item"><a href="#container__three">Gallery</a></li>
+                <li class="nav__list-item"><a href="#container__four">Demo</a></li>
+            </ul>
+    </nav>
+    <section class="container">
+            <div id="container__one" class="container__section">
+                <div class="container__section__image">
+                    <img alt="game interface" width= "500px" height= "500px" src="./images/main_menu.jpg"/>
+                </div>
+                    <div class="container__section__text">
+                        <h3>FruitPluck</h3>
+                        <p>FruitPluck is a game that my friend Ghous Ali and I built as a part of our course project in Intro to CS. It is implemented using python and processing. The game is played using a mouse. The game starts with the first level where the user uses a mouse to click on the fruits that grow in trees and has to click them at the right time so that they fall into the basket. As a result, the score increases by certain points depending on which fruits (mangoes:30pts, apples:10pts, or oranges:20pts) you are able to get into the basket. If the fruits fall into the basket, there is a beep sound, else there is a crash sound. </p>
+                        <p>As the score progresses and crosses a threshold, the level increases, and as a result, the speed of the basket and the background sound increases. There is a health bar on the lowermost right part of the screen which reduces if fruits are missed. When the health bar is empty, the game is over, and a “game over” along with the score and maximum level reached is displayed. Also, if you are in the top 5 of the high scores, you enter your name and your name is shown in the leaderboard. There is also a play again button to restart the game. </p>
+                    </div>
+            </div>
+            <div id="container__two" class="container__section">
+                    <div class="container__section__text">
+                        <h3>Development Process</h3>
+                        <p>The game is developed in python language, and the Integrated Development Environment (IDE) that is used to implement graphics is processing 3.0. The game is implemented using the object oriented concepts of python, including encapsulation, inheritance, and abstraction. There are four classes in total: Fruit, Basket, Health Bar, and Game. The development process of the game was divided into two people. I worked on class fruit and health bar, including all the methods related to these classes, namely gravity, update, mouse clicks, display. I also designed the health bar and other graphics for the game. My friend did the game interface part, audio, class basket, and its methods. We completed the project in about a week.</p>
+                        <p>Initially, the game didn’t have the leaderboard feature, but under the recommendation of our professor, we included leaderboard, whereby all the top 5 scores are shown after the game is over. This is possible because all the players’ scores are saved in a CSV file that is loaded as the game is over and saved in it. Then, the top 5 scores are chosen from the CSV file and displayed on the screen.</p>
+                    </div>
+                <div class="container__section__image">
+                    <img alt="running game" width= "500px" height= "500px" src="./images/mock_design.png"/>
+                </div>
+            </div>
+            <div id="container__three" class="container__section container__three">
+                <div class="container__section__image">
+                    <img alt="game main menu" width= "300px" height= "300px" src="./images/interface.png"/>
+                </div>
+                <div class="container__section__image">
+                    <img alt="game level 1"  width= "300px" height= "300px" src="./images/running_game.png"/>
+                </div>
+                <div class="container__section__image">
+                    <img alt="healthbar"  width= "300px" height= "300px" src="./images/healthbar.png"/>
+                </div>
+                <div class="container__section__image">
+                    <img alt="game over interface" width= "300px" height= "300px" src="./images/game_over.png"/>
+                </div>
+                <div class="container__section__image">
+                    <img alt="leaderboard interface"  width= "300px" height= "300px" src="./images/leaderboard.png"/>
+                </div>
+                <div class="container__section__image">
+                    <img alt="running game"  width= "300px" height= "300px" src="./images/game_screenshot.jpg"/>
+                </div>
+            </div>
+            <div id="container__four" class="container__section">
+                <div class="container__section__image">
+                    <video width="100%" height="100%" 
+                    controls="controls"/> 
+                      
+                    <source src="./videos/demo.mov" 
+                        type="video/mp4"> 
+                </div>
+            </div>
+    </section>
+    <p class="footer">Copyrights 2022 @ DIXIT TIMILSINA</p>
+</body>
+</html>
