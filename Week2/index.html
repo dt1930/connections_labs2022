@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ReminderWeekly</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1 class="heading">Write and Remind</h1>
+    <div class="wrapper"> 
+        <div class="wrapper__container-first">
+            <textarea  rows="10" cols="50" id="text-area" placeholder="">
+                1. Erase this whole text.
+                2. Write a reminder/note/task.
+                3. Choose the day number.
+                4. Click Save.
+                5. To check the notes, click on the days buttons below.
+            </textarea>
+            <div class="container-first__buttons">
+                <button class="container-first__buttons__card" id="decrease-button"><</button>
+                <div class="container-first__buttons__card displayCounter" id="counter-display"></div>
+                <button class="container-first__buttons__card" id="increase-button">></button>
+                <button class="container-first__buttons__card save" id="save-button">Save</button>
+            </div>
+        </div>
+        <div class="wrapper__container-second">
+            <button class="container-second__daycard" id="sun"> SUNDAY (1) </button>
+            <div id="wrapper__container-second__sun" class="wrapper__container-second__text"></div>
+            <button class="container-second__daycard" id="mon"> MONDAY (2) </button>
+            <div id="wrapper__container-second__mon" class="wrapper__container-second__text"></div>
+            <button class="container-second__daycard" id="tue"> TUESDAY (3) </button>
+            <div id="wrapper__container-second__tue" class="wrapper__container-second__text"></div>
+            <button class="container-second__daycard" id="wed">WEDNESDAY (4) </button>
+            <div id="wrapper__container-second__wed" class="wrapper__container-second__text"></div>
+            <button class="container-second__daycard" id="thu">THURSDAY (5) </button>
+            <div id="wrapper__container-second__thu" class="wrapper__container-second__text"></div>
+            <button class="container-second__daycard" id="fri"> FRIDAY (6) </button>
+            <div id="wrapper__container-second__fri" class="wrapper__container-second__text"></div>
+            <button class="container-second__daycard" id="sat">SATURDAY (7) </button>
+            <div id="wrapper__container-second__sat" class="wrapper__container-second__text"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
