@@ -1,0 +1,56 @@
+body{
+    background-color:rgba(151, 255, 182, 0.418);
+}
+.container__description__input{
+    font-size:20px;
+    text-align:center;
+    font-family: 'Caveat', cursive;
+}
+.container__description__title{
+    margin:0px;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin-top:5%;
+}
+.container__card{
+    width:70%;
+    height:100%;
+    font-size:500px;
+    background-color: rgba(151, 255, 182, 0.418);
+    text-align:center;
+    margin:0px;
+}
+.container__description{
+    display:block;
+    font-family: 'Caveat', cursive;
+    font-size:2rem;
+    width:25%;
+    height:25%;
+    margin-top:10%;
+}
+@media(max-width:710px){
+    .container{
+        flex-direction:column;
+        
+    }
+    .container__card{
+        width:60%;
+        font-size:200px;
+        margin-left:15%;
+    }
+    .container__description{
+        font-size:2rem;
+        padding:0px;
+        margin:15%;
+        width:50%;
+
+    }
+    .container__description__input{
+        font-size:15px;
+    }
+    
+}
