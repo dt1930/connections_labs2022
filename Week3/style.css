@@ -38,6 +38,7 @@ body{
         
     }
     .container__card{
+        width:85%;
         font-size:200px;
         margin-left:15%;
     }
