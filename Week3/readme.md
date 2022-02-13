@@ -42,7 +42,7 @@ I have self-evaluated my final product, the webpage by talking about some of the
       c. It is accessible in terms of color combinations and usability.
       
   ### 2. Weaknesses
-      a. The webpage isn’t complete because certain features like displaying the           correct and incorrect message still needs work. 
+      a. The webpage isn’t complete because certain features like displaying the correct and incorrect message still needs work. 
       b. The webpage doesn’t function ahead if the user is unable to guess the word. I am still thinking about what I should do in case the user is out of guesses and wants to pass. 
       c. I am not sure if this is a weakness, but the web page has a limited user interface (only few elements and no navigation tools). I will continue working on that.
 
