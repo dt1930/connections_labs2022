@@ -47,14 +47,14 @@ I have self-evaluated my final product, the webpage by talking about some of the
       c. I am not sure if this is a weakness, but the web page has a limited user interface (only few elements and no navigation tools). I will continue working on that.
 
 ## G. Takeaways from the process
-### 1. I have learned DOM manipulation and working with the console for debugging.
-### 2. I have learned how to handle event listeners and how to incorporate event-driven interactions in the web page.
-### 3. I have learned how to fetch data from a json file into the web page and manipulate that data in javascript.
+#### 1. I have learned DOM manipulation and working with the console for debugging.
+#### 2. I have learned how to handle event listeners and how to incorporate event-driven interactions in the web page.
+#### 3. I have learned how to fetch data from a json file into the web page and manipulate that data in javascript.
 
 ## H. Credits
-### 1.Professor Mathura Govindarajan
-### 2.Github account (Kevin Murani) for json file
-### 3.Stack Overflow
+#### 1.Professor Mathura Govindarajan
+#### 2.Github account (Kevin Murani) for json file
+#### 3.Stack Overflow
 
 ## I. Link of the final webpage :
 
