@@ -2,7 +2,7 @@
 
 ## A. Constructing a wireframe
 I created a simple wireframe for the web page because the web page only needed a few elements for its overall structure. I designed two separate wireframes for the web page to make sure it is responsive and looks elegant on mobile devices. I changed my mind a couple of times before deciding on one frame that omits unnecessary block elements or headings or navigation bars as the web page is supposed to be a simple word guessing game that doesn’t require much navigation. Therefore, I decided to go with the structure that looks minimal but elegant.
-![wireframe](https://github.com/dt1930/connections_labs2022/Week3/wireframe.png?raw=true)
+![wireframe](https://dt1930.github.io/connections_labs2022/Week3/wireframe.png?raw=true)
 
 ## B. Coding the structure of the webpage/ writing html
 My html was not heavy because the structure of the webpage had only a couple of elements. I used the wireframe to write html. I have tried to stick to the BEM convention for naming classes. The tags that have been used are div, h1, input, p, and section. The emoji that appears on the center is not an image, but it is text content loaded from a json file. Although the structure of the page looks effortless, I wanted users to just come to the site and without much hassle of navigation with clicking buttons or menus just go into the game by guessing words. My audience is any one who is familiar with the use of emojis in social media and wants to enjoy a word guessing game by thinking and reflecting on how a certain emoji is related to that word. It is meant for entertainment among friends, so it made sense to keep it user friendly, plain and simple.
@@ -38,6 +38,6 @@ I have self-evaluated my final product, the webpage by talking about some of the
 #### 2.Github account (Kevin Murani) for json file
 #### 3.Stack Overflow
 
-## I. Link of the final webpage :
+## I. Link of the final webpage : https://dt1930.github.io/connections_labs2022/Week3/index.html
 
 
