@@ -4,10 +4,10 @@ let startingTime=2;
 let time=startingTime*60;
 let emojiGotWrong=[];
 let gotRight=0;
-let mainAudio= new Audio ("./sounds/homePageAudio.mp3");
-let correctAudio= new Audio ("./sounds/correctAudio.mp3");
-let wrongAudio= new Audio ("./sounds/wrongAudio.mp3");
-let gameOverAudio= new Audio ("./sounds/gameOverAudio.mp3");
+let mainAudio= new Audio ("https://dt1930.github.io/connections_labs2022/Project1/sounds/homePageAudio.mp3");
+let correctAudio= new Audio ("https://dt1930.github.io/connections_labs2022/Project1/sounds/correctAudio.mp3");
+let wrongAudio= new Audio ("https://dt1930.github.io/connections_labs2022/Project1/sounds/wrongAudio.mp3");
+let gameOverAudio= new Audio ("https://dt1930.github.io/connections_labs2022/Project1/sounds/gameOverAudio.mp3");
 window.addEventListener("load",function(){
     fetch("dataset.json").then(response=>response.json()).then(function(data){
         let introBlock=document.getElementById("display-box");
