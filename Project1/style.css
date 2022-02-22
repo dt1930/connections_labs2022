@@ -1,0 +1,97 @@
+body{
+    background-color:rgba(255, 255, 255, 0.418);
+}
+.container__description__input{
+    font-size:20px;
+    text-align:center;
+    font-family: 'Caveat', cursive;
+}
+.container__description__title{
+    margin:0px;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin-top:5%;
+}
+.container__card{
+    width:60%;
+    height:100%;
+    font-size:25em;
+    text-align:center;
+    margin:0px;
+}
+.container__description{
+    display:block;
+    font-family: 'Caveat', cursive;
+    font-size:2rem;
+    width:25%;
+    height:25%;
+    /* margin-top:3%; */
+}
+.container_description_box{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container__description__symbol{
+    margin:0px;
+    margin-left:18%;
+}
+.container__description__btn{
+    display:none;
+    border:none;
+    background-color: #2962ff;
+    color:white;
+    cursor:pointer;
+    height:3em;
+    width:7em;
+    font-size:0.5em;
+    margin-top:4px;
+    justify-content: center;
+}
+.container__description__btn:hover{
+    background-color: #1600db;;
+}
+li{
+    font-size: 3em;
+    list-style-type: none;
+}
+.display-box{
+    display:block;
+    background-color: rgb(170, 170, 170);
+    font-family: "Caveat";
+    width:100%;
+    height:100%;
+    padding: 30px 40px;
+    text-align:center;
+    transform:translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    position:absolute;
+    border-radius:8px;
+
+}
+@media(max-width:710px){
+    .container{
+        flex-direction:column;
+    }
+    .container__card{
+        font-size:200px;
+        margin-left:15%;
+    }
+    .container__description{
+        font-size:2rem;
+        padding:0px;
+        margin:15%;
+        margin-top:0%;
+        width:50%;
+
+    }
+    .container__description__input{
+        font-size:15px;
+    }
+    
+}
