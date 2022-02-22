@@ -29,7 +29,6 @@ body{
     font-size:2rem;
     width:25%;
     height:25%;
-    /* margin-top:3%; */
 }
 .container_description_box{
     display:flex;
@@ -48,9 +47,10 @@ body{
     cursor:pointer;
     height:3em;
     width:7em;
-    font-size:0.5em;
+    font-size:0.7em;
     margin-top:4px;
     justify-content: center;
+    font-family: 'Caveat', cursive;
 }
 .container__description__btn:hover{
     background-color: #1600db;;

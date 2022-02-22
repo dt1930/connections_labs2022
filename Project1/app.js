@@ -4,6 +4,10 @@ let startingTime=2;
 let time=startingTime*60;
 let emojiGotWrong=[];
 let gotRight=0;
+let mainAudio= new Audio ("/sounds/homePageAudio.mp3");
+let correctAudio= new Audio ("/sounds/correctAudio.mp3");
+let wrongAudio= new Audio ("/sounds/wrongAudio.mp3");
+let gameOverAudio= new Audio ("/sounds/gameOverAudio.mp3");
 window.addEventListener("load",function(){
     fetch("dataset.json").then(response=>response.json()).then(function(data){
         let introBlock=document.getElementById("display-box");
@@ -16,6 +20,8 @@ window.addEventListener("load",function(){
         let button=document.getElementById("reset-btn");
         document.addEventListener("dblclick",()=>{
             introBlock.style.display="none";
+            mainAudio.play();
+            mainAudio.loop=true;
         }); 
         emojiColl=data.Smileys;
         console.log(counter);
@@ -46,6 +52,8 @@ window.addEventListener("load",function(){
         }
         button.addEventListener("click",reset);
         function reset(){
+            gameOverAudio.pause();
+            mainAudio.play();
             mistakes=0;
             gotRight=0;
             counter=getRandomInt(0,150);
@@ -66,12 +74,16 @@ window.addEventListener("load",function(){
                 let seconds=time%60;
                 seconds=seconds<10 ? "0"+seconds : seconds;
                 if (time==0){
+                    mainAudio.pause();
+                    gameOverAudio.play();
                     item.style.fontFamily="Caveat";
                     item.style.fontSize="25px";
                     item.innerHTML="Score:"+gotRight*5+"</br>"+"Incorrect:"+emojiGotWrong.length;
                     item.style.width="50%";
                     for (let i=0; i<emojiGotWrong.length; i++){
-                        item.innerHTML+="<br/>"+emojiColl[emojiGotWrong[i]].emoji+" > "+"Code:"+emojiColl[emojiGotWrong[i]].code+"<br/>Description: "+emojiColl[emojiGotWrong[i]].description+"<br/>Word:"+emojiColl[emojiGotWrong[i]].keywords[0];
+                        item.innerHTML+="<br/>"+emojiColl[emojiGotWrong[i]].emoji+
+                        "<br/>Word:"+emojiColl[emojiGotWrong[i]].keywords[0]+"<br/>Description: "+
+                        emojiColl[emojiGotWrong[i]].description.toLowerCase();
                     }
                     button.style.display="block";
                     hint.innerHTML="";
@@ -86,6 +98,8 @@ window.addEventListener("load",function(){
             userInput=e.target.value;
             if (userInput==emojiColl[counter].keywords[0]){
                 field.innerHTML="✅";
+                correctAudio.play();
+                e.target.value="";
                 gotRight++;
                 counter=getRandomInt(0,150);
                 console.log(counter);
@@ -93,19 +107,20 @@ window.addEventListener("load",function(){
             }
             else{
                 field.innerHTML="❌";
+                wrongAudio.play();
                 mistakes++;
-                console.log(mistakes);
+                e.target.value="";
                 if (mistakes==1){
                     hint.innerHTML="It's a "+emojiColl[counter].keywords[0].length+" letter word.";
                 }
                 else if (mistakes==2){
-                    hint.innerHTML+="<br/>The word starts with "+ emojiColl[counter].keywords[0].substring(0,1)+".";
+                    hint.innerHTML+="<br/>The word starts with "+emojiColl[counter].keywords[0].substring(0,1)+".";
                 }
                 else if (mistakes==3){
                     hint.innerHTML+="<br/>The word starts with "+ emojiColl[counter].keywords[0].substring(0,2)+".";
                 }
                 else if (mistakes==4){
-                    hint.innerHTML+="<br/>Sorry, the word was "+emojiColl[counter].keywords[0]+".";
+                    hint.innerHTML+="<br/>Sorry, the word was </br>"+emojiColl[counter].keywords[0].toUpperCase();
                     emojiGotWrong.push(counter);
                     counter=getRandomInt(0,150);
                     changeEmoji(counter);
