@@ -1,14 +1,7 @@
 body{
-    background-color:rgba(255, 255, 255, 0.418);
+    background-color:rgba(179, 179, 179, 0.418); 
 }
-.container__description__input{
-    font-size:20px;
-    text-align:center;
-    font-family: 'Caveat', cursive;
-}
-.container__description__title{
-    margin:0px;
-}
+/*Displaying the emoji box and input box with heading as flex*/
 .container{
     display:flex;
     flex-direction:row;
@@ -16,6 +9,7 @@ body{
     justify-content: space-evenly;
     margin-top:5%;
 }
+/* Setting the emoji size and position*/
 .container__card{
     width:60%;
     height:100%;
@@ -23,6 +17,7 @@ body{
     text-align:center;
     margin:0px;
 }
+/*Formatting the heading content*/
 .container__description{
     display:block;
     font-family: 'Caveat', cursive;
@@ -30,17 +25,27 @@ body{
     width:25%;
     height:25%;
 }
-.container_description_box{
+/* Displaying the input box and timer as flex*/
+.container__description__box{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+/* Setting the font properties of input box*/
+.container__description__input{
+    font-size:30px;
+    text-align:center;
+    font-family: 'Caveat', cursive;
+}
+.container__description__title{
+    margin:0px;
 }
 .container__description__symbol{
     margin:0px;
     margin-left:18%;
 }
 .container__description__btn{
-    display:none;
+    display:none; /* Setting the initial display of restart button none */
     border:none;
     background-color: #2962ff;
     color:white;
@@ -55,19 +60,18 @@ body{
 .container__description__btn:hover{
     background-color: #1600db;;
 }
-li{
+li{ /* formatting the instructions on the instruction box */
     font-size: 3em;
     list-style-type: none;
 }
 .display-box{
     display:block;
-    background-color: rgb(170, 170, 170);
+    background-image: url("/images/backgroundEmoji.png"); /* setting the background emoji image */
     font-family: "Caveat";
     width:100%;
     height:100%;
-    padding: 30px 40px;
     text-align:center;
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%); /* positioning the x and y coordinate of box at center */
     left:50%;
     top:50%;
     position:absolute;
@@ -75,8 +79,9 @@ li{
 
 }
 @media(max-width:710px){
+    /*adjusting the content size and formatting for mobile devices*/
     .container{
-        flex-direction:column;
+        flex-direction:column; /*changing the flex-direction from row to column for max-width of 710px*/
     }
     .container__card{
         font-size:200px;

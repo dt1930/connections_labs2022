@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2 Minutes with Emojis</title>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!--My css file-->
     <link rel="stylesheet" href="style.css"/>
+    <!--Importing google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">                                                                                                                                                                             
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Changa:wght@200&display=swap" rel="stylesheet">
+    <!--My script file-->
     <script src="app.js"></script>
 </head>
 <body>
+    <!--Instruction interface-->
     <div id="display-box" class="display-box">
         <p><h1>2 Minutes With Emojis</h1></p>
         <h1>Rules:</h1>
@@ -22,17 +28,23 @@
             <li>Double click anywhere to start.</li>
         </ul>
     </div>
+    <!--Game interface-->
     <section class="container">
+        <!--Emoji display box-->
         <div class="container__card" id="container__card">
         </div>
+        <!--Input box and heading-->
         <div class="container__description">
             <h1 class="container__description__title">2 Minutes With EMOJIs</h1>
-            <div class="container_description_box">
+            <!--Input box-->
+            <div class="container__description__box">
                 <input id ="input-box" placeholder="Guess word" height= "10px" class="container__description__input" type="text"/>
+                <!--Timer-->
                 <p id="countdown"></p>
             </div>
-            <p id="field" class=container__description__symbol></p>
+            <p id="rightWrongSymbol" class=container__description__symbol></p>
             <button class="container__description__btn" id="reset-btn">Restart</button>
+            <!--Hint box-->
             <div id="hint">
             </div>
         </div>
