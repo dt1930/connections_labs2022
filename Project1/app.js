@@ -119,21 +119,22 @@ window.addEventListener("load",function(){
             }
             else{
                 //if user enters the incorrect word
+                let keyWord=emojiColl[randomNumber].keywords[0];
                 rightWrongSymbol.innerHTML="❌";
                 wrongAudio.play(); //play the wrong audio
                 mistakes++; //incrementing the number of mistakes for a particular emoji
                 e.target.value=""; //empty the input box
                 if (mistakes==1){ //first hint is number of letters
-                    hint.innerHTML="It's a "+emojiColl[randomNumber].keywords[0].length+" letter word.";
+                    hint.innerHTML="It's a "+keyWord.length+" letter word.";
                 }
                 else if (mistakes==2){ //second hint is first letter
-                    hint.innerHTML+="<br/>The word starts with "+emojiColl[randomNumber].keywords[0].substring(0,1)+".";
+                    hint.innerHTML+="<br/>The word starts with "+keyWord.substring(0,1)+".";
                 }
                 else if (mistakes==3){ //third hint is first two letters
-                    hint.innerHTML+="<br/>The word starts with "+ emojiColl[randomNumber].keywords[0].substring(0,2)+".";
+                    hint.innerHTML+="<br/>The word starts with "+ keyWord.substring(0,2)+".";
                 }
                 else if (mistakes==4){ //show the answer
-                    hint.innerHTML+="<br/>Sorry, the word was </br>"+emojiColl[randomNumber].keywords[0].toUpperCase();
+                    hint.innerHTML+="<br/>Sorry,it was</br>"+"<font color=red>" + keyWord.toUpperCase()+"</font>";
                     emojiGotWrong.push(randomNumber); //append the emoji number to the array
                     randomNumber=getRandomInt(0,150); //generate new random number
                     changeEmoji(randomNumber); //change the emoji
