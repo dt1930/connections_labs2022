@@ -86,7 +86,7 @@ window.addEventListener("load",function(){
                     emojiContainer.style.fontSize="25px"; //changing the font size for score report
                     /*score calculated by multiplying 5 and number of correct answers*/
                     /*number of incorrect answers is the length of emojiGotWrong array */
-                    emojiContainer.innerHTML="Score:"+gotRight*5+"</br>"+"Incorrect:"+emojiGotWrong.length; 
+                    emojiContainer.innerHTML="Score:"+gotRight*5+"</br>"+"Incorrect:"+emojiGotWrong.length+"</br>Correct:"+gotRight; 
                     emojiContainer.style.width="50%";
                     /*Displaying all the emojis with descriptions that user got wrong*/
                     for (let i=0; i<emojiGotWrong.length; i++){
