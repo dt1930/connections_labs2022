@@ -9,23 +9,23 @@ It is a universally acknowledged fact that the use of emojis has grown rapidly i
 ## C. Wireframing the project
 My first thoughts for the web page were menus, instruction tabs, buttons, and all, so my first wireframe idea was too convoluted. As I discovered more wireframing ideas, I came up with a minimal look yet elegant enough to hook the players into the game. Since the game was a simple word guessing game, I thought it would be useless to include unnecessary graphics and elements on the webpage that can interfere with the user experience and focus. Therefore, I have in my wireframe the least number of block elements needed for a robust and elegant structure of the web page. Below are my wireframes for mobile and desktop viewports.</br>
 
-![wireframe]("https://dt1930.github.io/connections_labs2022/Project1/wireframe.png")
+![wireframe](https://dt1930.github.io/connections_labs2022/Project1/wireframe.png)
 
 These were my initial wireframes but as we will see the final project looks slightly different although the main structure still remains the same.
 
 ## D. Writing the html page
 The wireframe of the web page was utilized to write the index.html that includes all the div elements and input elements required for the web page. Writing html was not difficult because my blocks were already in place and my web page required a limited number of elements. I have tried my best to stick to the BEM convention for naming all my classes. The tags that I have used are h1, div, input, p, button, and section. Although the structure of the page looks effortless, I wanted users to just come to the site and without much hassle of navigation just go into the game immediately. However, one important modification I made as a part of the professor’s focus on on-boarding of the game was I created a landing page that has clear and only needed information on what the game or page does. I have used four bullet points and asked users to double click to start. This means the users can start the game easily while also having the knowledge of what is expected of the web page. Below is my landing page.</br>
-![landingPage]("https://dt1930.github.io/connections_labs2022/Week3/landingPage.png")
+![landingPage](https://dt1930.github.io/connections_labs2022/Project1/landingPage.png)
 
 ## E. Writing the style.css
 Writing the CSS was an important part of the user experience and mainly included designing the landing page background, making the page responsive, resizing the elements and formatting the headings. My landing page has a background of emojis with little opacity that gives the users idea that the game has something to do with emojis and provides a feeling of comfort as they start the game. This background was created in Adobe Photoshop. I have used the google font Caveat throughout the web page to create a more personal tone. I felt this font suited the overall sense meant to be conveyed by the web page i.e. slightly informal, more connecting (it looks more like someone’s handwriting than the perfect computer-produced text).
 In the main game page, a light gray background is used so that text and input box as well as emojis are conspicuous. The div elements in the desktop version are arranged using flexbox with the flex direction as row that changes to column when viewed in mobile devices. Here, I have attached the images of the web page before and after applying CSS.
 
 Before CSS:</br>
-![beforeCSS]("https://dt1930.github.io/connections_labs2022/Week3/beforeCSS.png")
+![beforeCSS](https://dt1930.github.io/connections_labs2022/Project1/beforeCSS.png)
 </br>
 After CSS:</br>
-![afterCSS]("https://dt1930.github.io/connections_labs2022/Week3/afterCSS.png")
+![afterCSS](https://dt1930.github.io/connections_labs2022/Project1/afterCSS.png)
 
 ## F. Working on the functionality of the web page/ writing app.js
 I always wondered how my friends built dictionaries and other websites: where did they get so much data from? It was enlightening to know that the use of APIs makes that possible. I have used  a json file (https://raw.githubusercontent.com/amurani/unicode-emoji-list/master/full-emoji-list.json) to display the emojis on the web page. This json file contains emojis along with the unicodes and keywords associated with them. The game basically works this way: </br>
