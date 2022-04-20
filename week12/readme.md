@@ -34,4 +34,4 @@ I have self-evaluated my final product, the webpage by talking about some of the
   2. The Coding Train channel
   3. Ml5 reference documentation
 
-## G. Link of the final webpage : https://dt1930.github.io/connections_labs2022/Week12/index.html
+## G. Link of the final webpage : https://dt1930.github.io/connections_labs2022/week12/index.html
