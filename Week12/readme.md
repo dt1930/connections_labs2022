@@ -36,7 +36,7 @@ I have self-evaluated my final product, the webpage by talking about some of the
   3. Ml5 reference documentation
 
 ## G. Link of the final webpage : https://dt1930.github.io/connections_labs2022/Week12/index.html
-The above link doesn't work properly because the model.weights.bin is not loaded properly, so please download all the files and run
+The above link doesn't work properly because the model.weights.bin is not loaded properly for some reason, so please download all the files and run
 on a local machine to use the web page.
 
 
